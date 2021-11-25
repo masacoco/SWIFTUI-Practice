@@ -12,6 +12,7 @@ struct PRACTICESWIFTApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+//                .environmentObject(UserData())
         }
     }
 }

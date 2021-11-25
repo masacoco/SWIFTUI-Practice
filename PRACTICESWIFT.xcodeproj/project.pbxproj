@@ -11,6 +11,7 @@
 		A433EA44274F921700EA4844 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433EA43274F921700EA4844 /* ContentView.swift */; };
 		A433EA46274F921C00EA4844 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A433EA45274F921C00EA4844 /* Assets.xcassets */; };
 		A433EA49274F921C00EA4844 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A433EA48274F921C00EA4844 /* Preview Assets.xcassets */; };
+		A4B4A04A274FAABA00B51488 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B4A049274FAABA00B51488 /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		A433EA43274F921700EA4844 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A433EA45274F921C00EA4844 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A433EA48274F921C00EA4844 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A4B4A049274FAABA00B51488 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				A433EA41274F921700EA4844 /* PRACTICESWIFTApp.swift */,
 				A433EA43274F921700EA4844 /* ContentView.swift */,
+				A4B4A049274FAABA00B51488 /* UserData.swift */,
 				A433EA45274F921C00EA4844 /* Assets.xcassets */,
 				A433EA47274F921C00EA4844 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4B4A04A274FAABA00B51488 /* UserData.swift in Sources */,
 				A433EA44274F921700EA4844 /* ContentView.swift in Sources */,
 				A433EA42274F921700EA4844 /* PRACTICESWIFTApp.swift in Sources */,
 			);

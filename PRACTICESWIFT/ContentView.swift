@@ -6,13 +6,124 @@
 //
 
 import SwiftUI
-
+//image
 struct ContentView: View {
     var body: some View {
-        Text("Hello")
-            .padding()
+        Image("hanashiai")
+            .resizable()
+            .frame(width: 100, height: 100, alignment: .center)
     }
 }
+
+
+//Textfield
+//struct ContentView: View {
+//    @State var favoriteAnimal = ""
+//    var body: some View {
+//        textfield
+//        VStack {
+//            TextField("好きな動物はなに？", text: $favoriteAnimal)
+//            Text("好きな動物は\(favoriteAnimal)")
+//                .padding()
+//
+//            onCommit
+//        VStack {
+//            TextField("好きな動物はなに？", text: $favoriteAnimal, onCommit: {
+//                favoriteAnimal = ""
+//            })
+//                Text("好きな動物は\(favoriteAnimal)")
+//                    .padding()
+//        }
+//    }
+//}
+
+
+
+
+
+
+
+
+
+
+//@ environment Object
+//struct ContentView: View {
+//    @EnvironmentObject var userData:UserData
+//
+//    var body: some View {
+//        VStack {
+//            Button(action:{
+//                userData.age += 1
+//            })
+//            {
+//                Text("年齢を増やす")
+//            }
+//
+//            Text("ContentView:\(userData.name)の年齢は\(userData.age)歳")
+//                .padding()
+//            AnotherContentView()
+//        }
+//    }
+//}
+//
+//struct AnotherContentView: View{
+//    @EnvironmentObject var userData:UserData
+//
+//    var body: some View{
+//        Text("AnotherContentView:\(userData.name)の年齢は\(userData.age)歳")
+//    }
+//}
+//
+
+//@Observed Object:インスタンス版の @State
+//struct ContentView: View {
+// @ Observed Object var userData = UserData(name: "鈴木", age: 20)
+//
+//    var body: some View {
+//        VStack {
+//            Button(action: {
+//                userData.name = "佐藤"
+//            })
+//            {
+//                Text("名前を変える")
+//                    .padding()
+//            }
+//
+//            Button(action: {
+//                userData.age += 1
+//            })
+//            {
+//                Text("歳を増やす")
+//                    .padding()
+//            }
+//
+//            Text("\(userData.name)の年齢は『\(userData.age) 』歳")
+//        }
+//    }
+//}
+
+
+
+
+
+//@State:Viewの構造体の中でプロパティを変更できるようにするもの。構造体では＠stateをつけるたプロパティが変わったときにViewが更新される
+//struct ContentView: View {
+//
+//    @State var lastName = "田中"
+//    let firstName = "太郎"
+//
+//    var body: some View {
+//        VStack{
+//            Button(action:{self.lastName = "島田"}){
+//                Text("名字を変える")
+//            }
+//            Text(lastName + firstName)
+//        }
+//    }
+//}
+
+
+
 //ForEach:数値範囲を用いて複数回繰り返す方法
 //構造体の配列から要素を一つづつ取り出していく方法
 //struct ContentView: View {
@@ -155,6 +266,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+//            .environmentObject(UserData())
 .previewInterfaceOrientation(.portrait)
     }
 }
